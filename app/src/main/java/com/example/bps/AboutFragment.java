@@ -1,19 +1,13 @@
 package com.example.bps;
 
-import android.app.Activity;
 import android.os.Bundle;
-
-import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
-import androidx.cardview.widget.CardView;
-import androidx.fragment.app.Fragment;
-import androidx.fragment.app.FragmentManager;
-import androidx.viewpager.widget.PagerAdapter;
-import androidx.viewpager.widget.ViewPager;
-
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+
+import androidx.annotation.Nullable;
+import androidx.fragment.app.Fragment;
+import androidx.viewpager.widget.ViewPager;
 
 import com.example.bps.fragmentslider.page1;
 import com.example.bps.fragmentslider.page2;
@@ -21,9 +15,6 @@ import com.example.bps.fragmentslider.page3;
 import com.example.bps.fragmentslider.page4;
 import com.example.bps.fragmentslider.page5;
 import com.google.android.material.tabs.TabLayout;
-
-import java.util.ArrayList;
-import java.util.List;
 
 public class AboutFragment extends Fragment {
     View myFragment;
