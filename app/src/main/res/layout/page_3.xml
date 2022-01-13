@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#DADADA"
+    android:gravity="center">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/judul"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="30dp"
+            android:outlineAmbientShadowColor="@color/black"
+            android:outlineSpotShadowColor="@color/black"
+            android:padding="30dp"
+            app:cardBackgroundColor="#A2D6FF"
+            app:cardCornerRadius="50dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tugas, Fungsi \n dan \nKewenangan BPS"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:gravity="center"/>
+        </androidx.cardview.widget.CardView>
+
+        <ScrollView
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="100dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintTop_toBottomOf="@+id/judul"
+            app:layout_constraintVertical_bias="0.147"
+            tools:layout_editor_absoluteX="0dp">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cp1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:outlineAmbientShadowColor="@color/black"
+                android:outlineSpotShadowColor="@color/black"
+                android:padding="30dp"
+                app:cardBackgroundColor="@color/cardview_light_background"
+                app:cardCornerRadius="20dp">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+
+<!--                    <TextView-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="match_parent"-->
+<!--                        android:text="Deskripsi"-->
+<!--                        android:textStyle="bold"-->
+<!--                        android:gravity="center"-->
+<!--                        android:textSize="15dp"-->
+<!--                        android:layout_marginTop="470dp"-->
+<!--                        android:textColor="@color/black"/>-->
+
+                    <TextView
+                        android:id="@+id/p1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginEnd="15dp"
+                        android:layout_marginBottom="10dp"
+                        android:textColor="@color/black"
+                        android:textSize="15sp"
+                        android:text="     Tugas, fungsi dan kewenangan BPS telah ditetapkan berdasarkan Peraturan Presiden Nomor 86 Tahun 2007 tentang Badan Pusat Statistik dan Peraturan Kepala Badan Pusat Statistik Nomor 7 Tahun 2008 tentang Organisasi dan Tata Kerja Badan Pusat Statistik.
+\n \n 1. Tugas
+\n Melaksanakan tugas pemerintahan dibidang statistik sesuai peraturan perundang-undangan.
+\n \n 2. Fungsi
+\n a. Pengkajian, penyusunan dan perumusan kebijakan dibidang statistik;
+\n b. Pengkoordinasian kegiatan statistik nasional dan regional;
+\n c. Penetapan dan penyelenggaraan statistik dasar;
+\n d. Penetapan sistem statistik nasional;
+\n e. Pembinaan dan fasilitasi terhadap kegiatan instansi pemerintah dibidang kegiatan statistik; dan
+\n f. Penyelenggaraan pembinaan dan pelayanan administrasi umum dibidang perencanaan umum, ketatausahaan, organisasi dan tatalaksana, kepegawaian, keuangan, kearsipan, kehumasan, hukum, perlengkapan dan rumah tangga.
+\n \n 3. Kewenangan
+
+\n a. Penyusunan rencana nasional secara makro di bidangnya;
+\n b. Perumusan kebijakan di bidangnya untuk mendukung pembangunan secara makro;
+\n c. Penetapan sistem informasi di bidangnya;
+\n d. Penetapan dan penyelenggaraan statistik nasional;
+\n e. Kewenangan lain sesuai dengan ketentuan peraturan perundang-undangan yang berlaku, yaitu;
+\n          - Perumusan dan pelaksanaan kebijakan tertentu di bidang kegiatan statistik;
+\n          - Penyusun pedoman penyelenggaraan survei statistik sektoral.
+"/>
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </ScrollView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>

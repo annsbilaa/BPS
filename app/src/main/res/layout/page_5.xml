@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#DADADA"
+    android:gravity="center">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/judul"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="30dp"
+            android:outlineAmbientShadowColor="@color/black"
+            android:outlineSpotShadowColor="@color/black"
+            android:padding="30dp"
+            app:cardBackgroundColor="#A3FFA7"
+            app:cardCornerRadius="50dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Pegolahan Data"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:gravity="center"/>
+        </androidx.cardview.widget.CardView>
+
+        <ScrollView
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintTop_toBottomOf="@+id/judul"
+            app:layout_constraintVertical_bias="0.147"
+            tools:layout_editor_absoluteX="0dp">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cp1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:outlineAmbientShadowColor="@color/black"
+                android:outlineSpotShadowColor="@color/black"
+                android:padding="30dp"
+                app:cardBackgroundColor="@color/cardview_light_background"
+                app:cardCornerRadius="20dp">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+
+                    <TextView
+                        android:id="@+id/p1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginEnd="15dp"
+                        android:layout_marginBottom="10dp"
+                        android:textColor="@color/black"
+                        android:textSize="15sp"
+                        android:text="     Tahap pengolahan data sangat menentukan seberapa jauh tingkat keakuratan dan ketepatan data statistik yang dihasilkan. BPS merupakan instansi perintis dalam penggunaan komputer karena telah memulai menggunakannya sejak sekitar 1960. Sebelum menggunakan komputer, BPS menggunakan kalkulator dan alat hitung sipoa dalam mengolah data.
+\n \n    Teknologi komputer yang diterapkan di BPS selalu disesuaikan dengan perkembangan teknologi informasi dan juga mengacu kepada kebutuhan. Personal komputer yang secara umum lebih murah dan efisien telah dicoba digunakan untuk menggantikan mainframe. Sejak 1980-an, personal komputer telah digunakan di seluruh kantor BPS provinsi, diikuti dengan penggunaan komputer di seluruh BPS kabupaten dan kota sejak 1992.
+\n \n    Dengan menggunakan personal komputer, kantor statistik di daerah dapat segera memproses pengolahan data, yang merupakan rangkaian kegiatan yang dimulai dari pengumpulan data, kemudian memasukkan data mentah ke dalam komputer dan selanjutnya data tersebut dikirim ke BPS pusat untuk diolah menjadi data nasional.
+\n \n    Pengolahan data menggunakan personal komputer telah lama menjadi contoh pengolahan yang diterapkan oleh direktorat teknis di BPS pusat, terutama jika direktorat tersebut harus mempublikasikan hasil yang diperoleh dari survei yang diselenggarakan.
+\n \n    Pengolahan data Sensus Penduduk tahun 2000 telah menggunakan mesin scanner, tujuannya untuk mempercepat kegiatan pengolahan data. Efek positif dari penggunaan komputer oleh direktorat teknis yaitu selain lebih cepat, juga dapat memotivasi pegawai yang terlibat turut bertanggung jawab untuk menghasilkan sebanyak mungkin data statistik dan indikator secara tepat waktu dan akurat dibanding sebelumnya. Selain itu, penggunaan computer sangat mendukung BPS dalam menghasilkan berbagai data statistik dan indikator-indikator yang rumit seperti kemiskinan, Input-Output (I-O) table, Social Accounting Matrix (SAM), dan berbagai macam indeks komposit dalam waktu yang relatif singkat.
+\n \n    Pada 1993, BPS mulai mengembangkan sebuah sistem informasi statistik secara geografis khususnya untuk pengolahan data wilayah sampai unit administrasi yang terkecil yang telah mulai dibuat secara manual sejak 1970. Data wilayah ini dibuat khususnya untuk menyajikan karakteristik daerah yang menonjol yang diperlukan oleh para perumus kebijakan dalam perencanaan pembangunan.
+\n \n    Dalam mengolah data, BPS juga telah mengembangkan berbagai program aplikasi untuk data entry, editing, validasi, tabulasi dan analisis dengan menggunakan berbagai macam bahasa dan paket komputer. BPS bertanggung jawab untuk mengembangkan berbagai perangkat lunak komputer serta mentransfer pengetahuan dan keahliannya kepada staf BPS daerah.
+\n \n    Pembangunan infrastruktur teknologi informasi di BPS didasarkan pada tujuan yang ingin dicapai yaitu mengikuti perkembangan permintaan dan kebutuhan dalam pengolahan data statistik; melakukan pembaharuan/inovasi dalam hal metode kerja yang lebih baik serta memberikan kemudahan kepada publik dalam mendapatkan informasi statistik.
+"/>
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </ScrollView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>

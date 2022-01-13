@@ -1,33 +1,101 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.bps">
+    <!--
+         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but you must specify either coarse or fine
+         location permissions for the "MyLocation" functionality.
+    -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@drawable/logobps"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.Bps">
+        android:theme="@style/AppTheme">
+
         <activity
             android:name=".SplashScreenActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
         <activity
-            android:name=".MainActivity"
+            android:name=".login.Login"
             android:exported="true" />
         <activity
-            android:name=".ipm"
+            android:name=".login.Register"
             android:exported="true" />
         <activity
-            android:name=".pdrb"
+            android:name=".admin.adminhome"
             android:exported="true" />
         <activity
-            android:name=".kemiskinan"
+            android:name=".user.userhome"
+            android:exported="true" />
+        <activity
+            android:name=".admin.ipmRVActivity_admin"
+            android:exported="true"
+            android:label="Data"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".user.ipm_user"
+            android:exported="true"
+            android:label="Data"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".user.pdrb_user"
+            android:exported="true"
+            android:label="Data"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name=".layanan"
+            android:exported="true" />
+
+        <activity
+            android:name=".user.kemiskinan_user"
+            android:exported="true"
+            android:label="Data"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".admin.pdrbRVActivity_admin"
+            android:exported="true"
+            android:label="Data"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".admin.kemiskinanRVActivity_admin"
+            android:exported="true"
+            android:label="Data"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ipm.grafikipm"
+            android:exported="true"
+            android:label="Grafik IPM" />
+
+        <activity
+            android:name=".pdrb.grafikpdrb"
+            android:exported="true"
+            android:label="Grafik PDRB" />
+        <activity
+            android:name=".kemiskinan.grafikkemiskinan"
+            android:exported="true"
+            android:label="Grafik KEMISKINAN" />
+        <activity
+            android:name=".admin.ipm_admin"
+            android:exported="true"
+            android:label="Indeks Pembangunan Manusia" />
+        <activity
+            android:name=".admin.pdrb_admin"
+            android:exported="true" />
+        <activity
+            android:name=".admin.kemiskinan_admin"
             android:exported="true" />
     </application>
 

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/telp"
+        android:title="(0711) 581713"
+        android:icon="@drawable/ic_telp"/>
+
+    <item
+        android:id="@+id/fax"
+        android:title="(0711) 581713"
+        android:icon="@drawable/ic_fax"/>
+
+    <item
+        android:id="@+id/mail"
+        android:title="bps1610@bps.go.id"
+        android:icon="@drawable/ic_mailbox" />
+
+    <item
+        android:id="@+id/web"
+        android:title="@string/linktosite"
+        android:icon="@drawable/ic_web" />
+
+    <item
+        android:id="@+id/layanan"
+        android:title="Pusat Layanan"
+        android:icon="@drawable/ic_layanan" />
+
+</menu>

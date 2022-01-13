@@ -1,17 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#E3E3E3"
     tools:context=".MapFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <ImageView
+        android:id="@+id/imgmap"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="Map"
-        android:textSize="48sp"
+        android:layout_height="600dp"
+        android:layout_gravity="center"
+        android:background="#171C37"
+        android:src="@drawable/mapbps2" />
+
+    <Button
+        android:id="@+id/mapbtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="logoutAdmin"
         android:textStyle="bold"
-        android:gravity="center"/>
+        android:textSize="20dp"
+        android:shadowRadius="100"
+        android:text="LIHAT MAP SELENGKAPNYA"
+        android:layout_marginBottom="100dp"
+        android:layout_gravity="bottom"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
 
 </FrameLayout>

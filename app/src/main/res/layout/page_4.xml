@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#DADADA"
+    android:gravity="center">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/judul"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="30dp"
+            android:outlineAmbientShadowColor="@color/black"
+            android:outlineSpotShadowColor="@color/black"
+            android:padding="30dp"
+            app:cardBackgroundColor="#FF8761"
+            app:cardCornerRadius="50dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Struktur Organisasi BPS"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:gravity="center"/>
+        </androidx.cardview.widget.CardView>
+
+        <ScrollView
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintTop_toBottomOf="@+id/judul"
+            app:layout_constraintVertical_bias="0.147"
+            tools:layout_editor_absoluteX="0dp">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cp1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:outlineAmbientShadowColor="@color/black"
+                android:outlineSpotShadowColor="@color/black"
+                android:padding="30dp"
+                app:cardBackgroundColor="@color/cardview_light_background"
+                app:cardCornerRadius="20dp">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+
+                    <ImageView
+                        android:id="@+id/imgstruktur"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginEnd="15dp"
+                        android:src="@drawable/strukturbps" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Deskripsi"
+                        android:textStyle="bold"
+                        android:gravity="center"
+                        android:textSize="15dp"
+                        android:layout_marginTop="470dp"
+                        android:textColor="@color/black"/>
+
+                    <TextView
+                        android:id="@+id/p1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="500dp"
+                        android:layout_marginEnd="15dp"
+                        android:layout_marginBottom="10dp"
+                        android:textColor="@color/black"
+                        android:textSize="15sp"
+                        app:layout_constraintTop_toBottomOf="@+id/imgstruktur"
+                        android:text="     Berdasarkan Peraturan Kepala Badan Pusat Statistik Nomor 8 Tahun 2020 tentang Organisasi dan Tata Kerja Badan Pusat Statistik Provinsi dan Badan Pusat Statistik Kabupaten/Kota. Susunan organisasi BPS Provinsi terdiri dari:
+\n 1. Kepala
+\n 2. Bagian Umum dan
+\n 3. Kelompok Jabatan Fungsional.
+\n \n    BPS Provinsi dipimpin oleh seorang Kepala yang mempunyai tugas memimpin BPS Provinsi sesuai dengan tugas dan fungsi BPS Provinsi serta membina aparatur BPS Provinsi agar berdaya guna dan berhasil guna.
+\n \n    Bagian Umum mempunyai tugas melaksanakan penyusunan perencanaan, keuangan, sumber daya manusia, hubungan masyarakat, hukum dan organisasi, kearsipan, persandian, barang milik negara, perlengkapan dan rumah tangga.
+\n \n    Kelompok Jabatan Fungsional mempunyai tugas memberikan pelayanan fungsional dalam pelaksanaan tugas dan fungsi BPS Provinsi sesuai dengan bidang keahlian dan keterampilan."
+                        />
+
+
+                </RelativeLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+        </ScrollView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>
