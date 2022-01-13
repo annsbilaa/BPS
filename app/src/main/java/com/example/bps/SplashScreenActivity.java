@@ -7,6 +7,8 @@ import android.os.Handler;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.app.AppCompatDelegate;
 
+import com.example.bps.login.Login;
+
 public class SplashScreenActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,7 +21,7 @@ public class SplashScreenActivity extends AppCompatActivity {
             @Override
             public void run() {
                 finishAffinity();
-                startActivity(new Intent(getApplicationContext(), MainActivity.class));
+                startActivity(new Intent(getApplicationContext(), Login.class));
             }
         }, 4000);
     }

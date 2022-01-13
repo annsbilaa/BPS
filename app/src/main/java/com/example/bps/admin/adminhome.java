@@ -14,10 +14,11 @@ import androidx.fragment.app.Fragment;
 
 import com.etebarian.meowbottomnavigation.MeowBottomNavigation;
 import com.example.bps.AboutFragment;
+import com.example.bps.layanan;
 import com.example.bps.MapFragment;
 import com.example.bps.R;
-import com.example.bps.layanan;
 import com.example.bps.login.Login;
+import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.material.navigation.NavigationView;
 import com.google.firebase.auth.FirebaseAuth;
@@ -37,9 +38,9 @@ public class adminhome extends AppCompatActivity implements NavigationView.OnNav
 
         SupportMapFragment mapFragment = (SupportMapFragment)  getSupportFragmentManager().findFragmentById(R.id.map);
         bottomNavigation = findViewById(R.id.bottom_navigation);
-        bottomNavigation.add(new MeowBottomNavigation.Model(1, R.drawable.ic_alamat));
-        bottomNavigation.add(new MeowBottomNavigation.Model(2, R.drawable.ic_home));
-        bottomNavigation.add(new MeowBottomNavigation.Model(3, R.drawable.ic_info));
+        bottomNavigation.add(new MeowBottomNavigation.Model(1,R.drawable.ic_alamat));
+        bottomNavigation.add(new MeowBottomNavigation.Model(2,R.drawable.ic_home));
+        bottomNavigation.add(new MeowBottomNavigation.Model(3,R.drawable.ic_info));
 
         getSupportFragmentManager().beginTransaction().replace(R.id.frame_layout, new adminHomeFragment()).commit();
         bottomNavigation.setOnShowListener(new MeowBottomNavigation.ShowListener() {
@@ -76,7 +77,7 @@ public class adminhome extends AppCompatActivity implements NavigationView.OnNav
         //navigation Drawer
         drawerLayout = findViewById(R.id.drawerLayout);
         navigationView = findViewById(R.id.navigation_view);
-        toggle = new ActionBarDrawerToggle(this, drawerLayout, R.string.start, R.string.close);
+        toggle = new ActionBarDrawerToggle(this, drawerLayout,R.string.start, R.string.close);
 
         drawerLayout.addDrawerListener(toggle);
         toggle.syncState();

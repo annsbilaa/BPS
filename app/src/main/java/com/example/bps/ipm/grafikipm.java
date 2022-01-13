@@ -1,11 +1,15 @@
 package com.example.bps.ipm;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.bps.R;
+import com.example.bps.login.Login;
+import com.google.firebase.auth.FirebaseAuth;
 import com.jjoe64.graphview.GraphView;
 import com.jjoe64.graphview.series.DataPoint;
 import com.jjoe64.graphview.series.LineGraphSeries;

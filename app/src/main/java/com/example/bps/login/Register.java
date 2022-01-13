@@ -1,5 +1,8 @@
 package com.example.bps.login;
 
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
+
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -9,12 +12,8 @@ import android.widget.CompoundButton;
 import android.widget.EditText;
 import android.widget.Toast;
 
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
-
 import com.example.bps.R;
 import com.example.bps.admin.adminhome;
-import com.example.bps.login.Login;
 import com.example.bps.user.userhome;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
@@ -83,7 +82,7 @@ public class Register extends AppCompatActivity {
 
                 //checkbox
                 if(!(isadminbox.isChecked() || isuserbox.isChecked())){
-                    Toast.makeText(com.example.bps.login.Register.this, "Pilih Tipe Akun Anda!", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(Register.this, "Pilih Tipe Akun Anda!", Toast.LENGTH_SHORT).show();
                 }
 
                 if(valid){
@@ -91,7 +90,7 @@ public class Register extends AppCompatActivity {
                         @Override
                         public void onSuccess(AuthResult authResult) {
                             FirebaseUser user = fAuth.getCurrentUser();
-                            Toast.makeText(com.example.bps.login.Register.this, "Akun Berhasil Dibuat", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(Register.this, "Akun Berhasil Dibuat", Toast.LENGTH_SHORT).show();
                             DocumentReference df = fstore.collection("Users").document(user.getUid());
                             Map<String,Object> userInfo = new HashMap<>();
                             userInfo.put("Fullname", fullName.getText().toString());
@@ -120,7 +119,7 @@ public class Register extends AppCompatActivity {
                     }).addOnFailureListener(new OnFailureListener() {
                         @Override
                         public void onFailure(@NonNull Exception e) {
-                            Toast.makeText(com.example.bps.login.Register.this, "Akun Gagal Dibuat", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(Register.this, "Akun Gagal Dibuat", Toast.LENGTH_SHORT).show();
                         }
                     });
                 }

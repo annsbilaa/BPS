@@ -4,8 +4,13 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import androidx.recyclerview.widget.LinearLayoutManager;
@@ -13,6 +18,9 @@ import androidx.recyclerview.widget.RecyclerView;
 import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 
 import com.example.bps.R;
+import com.example.bps.admin.kemiskinanAdapter_admin;
+import com.example.bps.admin.kemiskinanRVActivity_admin;
+import com.example.bps.admin.kemiskinan_admin;
 import com.example.bps.kemiskinan.DAOkemiskinan;
 import com.example.bps.kemiskinan.datakemiskinan;
 import com.example.bps.kemiskinan.grafikkemiskinan;
@@ -21,6 +29,7 @@ import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.ValueEventListener;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 
 public class kemiskinan_user extends AppCompatActivity
 {
