@@ -27,12 +27,12 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class Register extends AppCompatActivity {
-    EditText fullName,email,password,phone;
-    Button registerBtn,goToLogin;
+    EditText fullName, email, password, phone;
+    Button registerBtn, goToLogin;
     boolean valid = true;
     FirebaseAuth fAuth;
     FirebaseFirestore fstore;
-    CheckBox isadminbox,isuserbox;
+    CheckBox isadminbox, isuserbox;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -56,7 +56,7 @@ public class Register extends AppCompatActivity {
         isuserbox.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
-                if(compoundButton.isChecked()){
+                if (compoundButton.isChecked()) {
                     isadminbox.setChecked(false);
                 }
             }
@@ -65,7 +65,7 @@ public class Register extends AppCompatActivity {
         isadminbox.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
-                if(compoundButton.isChecked()){
+                if (compoundButton.isChecked()) {
                     isuserbox.setChecked(false);
                 }
             }
@@ -81,37 +81,37 @@ public class Register extends AppCompatActivity {
                 checkField(phone);
 
                 //checkbox
-                if(!(isadminbox.isChecked() || isuserbox.isChecked())){
+                if (!(isadminbox.isChecked() || isuserbox.isChecked())) {
                     Toast.makeText(Register.this, "Pilih Tipe Akun Anda!", Toast.LENGTH_SHORT).show();
                 }
 
-                if(valid){
-                    fAuth.createUserWithEmailAndPassword(email.getText().toString(),password.getText().toString()).addOnSuccessListener(new OnSuccessListener<AuthResult>() {
+                if (valid) {
+                    fAuth.createUserWithEmailAndPassword(email.getText().toString(), password.getText().toString()).addOnSuccessListener(new OnSuccessListener<AuthResult>() {
                         @Override
                         public void onSuccess(AuthResult authResult) {
                             FirebaseUser user = fAuth.getCurrentUser();
                             Toast.makeText(Register.this, "Akun Berhasil Dibuat", Toast.LENGTH_SHORT).show();
                             DocumentReference df = fstore.collection("Users").document(user.getUid());
-                            Map<String,Object> userInfo = new HashMap<>();
+                            Map<String, Object> userInfo = new HashMap<>();
                             userInfo.put("Fullname", fullName.getText().toString());
                             userInfo.put("UserEmail", email.getText().toString());
                             userInfo.put("PhoneNumber", phone.getText().toString());
 
                             //jika usernya admin
-                            if (isadminbox.isChecked()){
+                            if (isadminbox.isChecked()) {
                                 userInfo.put("isAdmin", "1");
                             }
-                            if (isuserbox.isChecked()){
+                            if (isuserbox.isChecked()) {
                                 userInfo.put("isUser", "1");
                             }
 
                             df.set(userInfo);
-                            if(isadminbox.isChecked()){
+                            if (isadminbox.isChecked()) {
                                 startActivity(new Intent(getApplicationContext(), adminhome.class));
                                 finish();
                             }
 
-                            if(isuserbox.isChecked()){
+                            if (isuserbox.isChecked()) {
                                 startActivity(new Intent(getApplicationContext(), userhome.class));
                                 finish();
                             }
@@ -130,17 +130,17 @@ public class Register extends AppCompatActivity {
         goToLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(getApplicationContext(),Login.class));
+                startActivity(new Intent(getApplicationContext(), Login.class));
             }
         });
 
     }
 
-    public boolean checkField(EditText textField){
-        if(textField.getText().toString().isEmpty()){
+    public boolean checkField(EditText textField) {
+        if (textField.getText().toString().isEmpty()) {
             textField.setError("Error");
             valid = false;
-        }else {
+        } else {
             valid = true;
         }
 
