@@ -1,5 +1,6 @@
 package com.example.bps.user;
 
+
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
@@ -13,6 +14,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 
 import com.example.bps.R;
+import com.example.bps.admin.ipmAdapter_admin;
 import com.example.bps.ipm.DAOipm;
 import com.example.bps.ipm.dataipm;
 import com.example.bps.ipm.grafikipm;
@@ -26,7 +28,7 @@ public class ipm_user extends AppCompatActivity
 {
     SwipeRefreshLayout swipeRefreshLayout;
     RecyclerView recyclerView;
-    ipmAdapter_user adapter;
+    ipmAdapter_admin adapter;
     DAOipm dao;
     boolean isLoading=false;
     String key =null;
@@ -44,7 +46,7 @@ public class ipm_user extends AppCompatActivity
         recyclerView.setHasFixedSize(true);
         LinearLayoutManager manager = new LinearLayoutManager(this);
         recyclerView.setLayoutManager(manager);
-        adapter= new ipmAdapter_user(this);
+        adapter= new ipmAdapter_admin(this);
         recyclerView.setAdapter(adapter);
         dao = new DAOipm();
         loadData();

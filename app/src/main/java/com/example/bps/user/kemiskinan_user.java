@@ -34,7 +34,7 @@ public class kemiskinan_user extends AppCompatActivity
     protected void onCreate(Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_ipmuser);
+        setContentView(R.layout.activity_kemiskinanuser);
 
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);

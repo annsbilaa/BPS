@@ -34,7 +34,7 @@ public class pdrb_user extends AppCompatActivity
     protected void onCreate(Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_ipmuser);
+        setContentView(R.layout.activity_pdrbuser);
 
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);

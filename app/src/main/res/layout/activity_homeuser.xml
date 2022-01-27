@@ -20,6 +20,12 @@
             android:layout_weight="1"
             android:id="@+id/frame_layout"/>
 
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="INI USER"
+            android:textSize="20sp"/>
+
         <com.etebarian.meowbottomnavigation.MeowBottomNavigation
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
