@@ -4,8 +4,12 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/ACER/AndroidStudioProjects/bps/app/src/main/res/drawable/ic_home.xml" value="0.1" />
+        <entry key="..\:/Users/ACER/AndroidStudioProjects/bps/app/src/main/res/layout/activity_homeadmin.xml" value="0.13949275362318841" />
+        <entry key="..\:/Users/ACER/AndroidStudioProjects/bps/app/src/main/res/layout/activity_homeuser.xml" value="0.1" />
         <entry key="..\:/Users/ACER/AndroidStudioProjects/bps/app/src/main/res/layout/activity_ipm.xml" value="0.1" />
+        <entry key="..\:/Users/ACER/AndroidStudioProjects/bps/app/src/main/res/layout/activity_ipmuser.xml" value="0.1" />
         <entry key="..\:/Users/ACER/AndroidStudioProjects/bps/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/Users/ACER/AndroidStudioProjects/bps/app/src/main/res/layout/activity_register.xml" value="0.22" />
         <entry key="..\:/Users/ACER/AndroidStudioProjects/bps/app/src/main/res/layout/activity_splash_screen.xml" value="0.15" />
         <entry key="..\:/Users/ACER/AndroidStudioProjects/bps/app/src/main/res/layout/activityhome.xml" value="0.1" />
         <entry key="..\:/Users/ACER/AndroidStudioProjects/bps/app/src/main/res/layout/fragment_about.xml" value="0.1" />

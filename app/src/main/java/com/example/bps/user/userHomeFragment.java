@@ -13,6 +13,9 @@ import androidx.fragment.app.Fragment;
 
 import com.example.bps.ImageSliderAdapter;
 import com.example.bps.R;
+import com.example.bps.admin.ipmRVActivity_admin;
+import com.example.bps.admin.kemiskinanRVActivity_admin;
+import com.example.bps.admin.pdrbRVActivity_admin;
 import com.smarteist.autoimageslider.IndicatorView.animation.type.IndicatorAnimationType;
 import com.smarteist.autoimageslider.SliderAnimations;
 import com.smarteist.autoimageslider.SliderView;
@@ -54,7 +57,7 @@ public class userHomeFragment extends Fragment{
         cardipm.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(context, ipm_user.class);
+                Intent intent = new Intent(context, ipmRVActivity_admin.class);
                 startActivity(intent);
             }
         });
@@ -63,7 +66,7 @@ public class userHomeFragment extends Fragment{
         cardpdrb.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(context, pdrb_user.class);
+                Intent intent = new Intent(context, pdrbRVActivity_admin.class);
                 startActivity(intent);
             }
         });
@@ -72,7 +75,7 @@ public class userHomeFragment extends Fragment{
         cardkemiskinan.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(context, kemiskinan_user.class);
+                Intent intent = new Intent(context, kemiskinanRVActivity_admin.class);
                 startActivity(intent);
             }
         });
