@@ -16,15 +16,11 @@ import com.etebarian.meowbottomnavigation.MeowBottomNavigation;
 import com.example.bps.AboutFragment;
 import com.example.bps.MapFragment;
 import com.example.bps.R;
-import com.example.bps.admin.adminHomeFragment;
 import com.example.bps.layanan;
 import com.example.bps.login.Login;
-import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.material.navigation.NavigationView;
 import com.google.firebase.auth.FirebaseAuth;
-import com.google.firebase.database.DatabaseReference;
-import com.google.firebase.firestore.FirebaseFirestore;
 
 import java.util.Objects;
 
@@ -46,7 +42,7 @@ public class userhome extends AppCompatActivity implements NavigationView.OnNavi
         bottomNavigation.add(new MeowBottomNavigation.Model(2, R.drawable.ic_home));
         bottomNavigation.add(new MeowBottomNavigation.Model(3, R.drawable.ic_info));
 
-        getSupportFragmentManager().beginTransaction().replace(R.id.frame_layout, new adminHomeFragment()).commit();
+        getSupportFragmentManager().beginTransaction().replace(R.id.frame_layout, new userHomeFragment()).commit();
         bottomNavigation.setOnShowListener(new MeowBottomNavigation.ShowListener() {
             @Override
             public void onShowItem(MeowBottomNavigation.Model item) {

@@ -50,7 +50,7 @@ public class userHomeFragment extends Fragment{
 
     public void onStart(){
         super.onStart();
-        CardView cardipm =(CardView) context.findViewById(R.id.cardipm);
+        CardView cardipm =(CardView) context.findViewById(R.id.cardipmuser);
         cardipm.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -59,7 +59,7 @@ public class userHomeFragment extends Fragment{
             }
         });
 
-        CardView cardpdrb =(CardView) context.findViewById(R.id.cardpdrb);
+        CardView cardpdrb =(CardView) context.findViewById(R.id.cardpdrbuser);
         cardpdrb.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -68,7 +68,7 @@ public class userHomeFragment extends Fragment{
             }
         });
 
-        CardView cardkemiskinan =(CardView) context.findViewById(R.id.cardkemiskinan);
+        CardView cardkemiskinan =(CardView) context.findViewById(R.id.cardkemiskinanuser);
         cardkemiskinan.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
